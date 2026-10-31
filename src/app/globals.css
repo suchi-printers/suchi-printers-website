@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 245, 235, 221;
+  --background-start-rgb: 20, 18, 16;
+  --background-end-rgb: 15, 14, 13;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #141210;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar styled for industrial packaging feel */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141210;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6B4423;
+  border-radius: 4px;
+  border: 1px solid #A67C52;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E8A33D;
+}
+
+/* Subtle Corrugated Flute Wave Pattern CSS for dividers */
+.flute-wave-divider {
+  background: radial-gradient(circle at 10px 0, transparent 8px, #A67C52 9px, #A67C52 11px, transparent 12px),
+    radial-gradient(circle at 10px 20px, transparent 8px, #A67C52 9px, #A67C52 11px, transparent 12px);
+  background-size: 20px 20px;
+  height: 16px;
+}
+
+/* Shipping Stamp Aesthetic */
+.stamp-badge {
+  border: 2px dashed #A67C52;
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 0.15em;
+  transform: rotate(-1.5deg);
+}
+
+/* Kraft tape aesthetic */
+.tape-strip {
+  background-color: rgba(166, 124, 82, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+}
